@@ -4,13 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+      <link rel="stylesheet" href="./slimselect.css">
+      <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
+    <div class="container">
+      <select class="breed-select " id="selectElement">
+        <option disabled selected value> </option>
+      </select>
+      <!-- <p class="loader">Loading data, please wait...</p> -->
+      <!-- <p class="error hidden">Oops! Something went wrong! Try reloading the page!</p> -->
+      <div class="cat-info hidden">
+        <img  class="cat-img" alt="" src="https://img.freepik.com/free-photo/little-grey-kitten-with-blue-eyes-lies-on-the-grey-couch_8353-7261.jpg?size=626&ext=jpg&ga=GA1.2.1414028650.1690841756&semt=sph" class="">
+        <h2 class="cat-name">Lorem, ipsum dolor</h2>
+        <p class="cat-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum cupiditate, beatae architecto eum, quia accusamus veniam dolorum quam incidunt qui, itaque reprehenderit? Minima recusandae officiis, quaerat maxime temporibus ullam debitis aut dolores dolor vitae id iure! Cupiditate labore voluptatem fugit tenetur dolor! Quod veritatis, recusandae ratione ipsam inventore soluta incidunt tempore molestiae quasi? Repellat, hic. Sequi maiores consequuntur amet, quam, reprehenderit quis velit iste dolorem repellat minima, esse tempore vitae harum nesciunt eveniet quaerat cum modi odit fuga! Est quia reprehenderit quidem vel aspernatur! Nam unde quod architecto, quaerat velit ducimus nihil, quam similique deleniti, explicabo nisi impedit. Dolore, enim!</p>
+        <p class="cat-temp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquid.</p>
 
+      </div>
+      
+    </div>
+    <div class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    
+  
+
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
